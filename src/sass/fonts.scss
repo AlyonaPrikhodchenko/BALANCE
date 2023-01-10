@@ -1,9 +1,48 @@
-// Файл шрифров. Например:
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Monda-Regular.woff2") format("woff2"), url("../fonts/Monda-Regular.woff") format("woff");
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: "Helvetika Neue";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../fonts/Helvetica-Neue-Regular.woff2") format("woff2"), url("../fonts/Helvetica-Neue-Regular.woff") format("woff");
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Italic.woff") format("woff");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monda";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Monda-Regular.woff2") format("woff2"), url("../fonts/Monda-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Prata-Regular.woff2") format("woff2"), url("../fonts/Prata-Regular.woff") format("woff");
+  font-display: swap;
+}

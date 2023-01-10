@@ -1,20 +1,20 @@
-//- Подключаем блок переменных в самом верху, что-бы все файлы видели
 block variables
+  include ../variables/variables
 
-//- Создаем шаблон для всех страниц сайта
+block mixins
+  include ../mixins/mixins
+
 doctype html
-html(lang=lang)
+html(lang='ru')
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title #{siteTitle}
+    link(rel="stylesheet", href="./css/style.min.css")
   body
-    .wrapper
-    //- Подключаем модуль шапки сайта
-    include ../modules/header
-    //- Добавляем блок основной информации на страницы
-    block content
-    //- Подключаем блок футера
-    include ../modules/footer
-    //- Подключаем блок со скриптами
+    .body-wrapper
+      include ../modules/header/header
+      block content
+      include ../modules/footer
     block scripts
+      <script src="./js/script.js"></script>

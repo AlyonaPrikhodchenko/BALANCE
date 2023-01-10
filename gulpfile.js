@@ -17,8 +17,9 @@ const pug = require('gulp-pug');
 // Styles
 
 function styles() {
-  return gulp.src("src/sass/**/style.scss")
+  return gulp.src("src/sass/style.scss")
     .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
     .pipe(plumber())
 
     .pipe(postcss([
@@ -41,8 +42,6 @@ function html() {
     }))
     .pipe(gulp.dest('build'));
 }
-
-// Scripts
 
 // Scripts
 function scripts() {

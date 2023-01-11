@@ -1,0 +1,26 @@
+.button {
+  padding: 14px 22px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background-color: $color-accent-light;
+  border-radius: 5px;
+
+  @include fontMontserrat(16px, 21px, $color-light);
+
+  &--accent {
+    background-color: $color-accent-dark;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+}

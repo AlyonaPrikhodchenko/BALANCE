@@ -1,11 +1,12 @@
 nav.header__nav.nav
-  ul.nav__list.reset-list
-    each item in menuItems
-      li.nav__list-item
-        if item.page === isPage
-          a.nav__list-link.nav__list-link--active= item.name
-        else
-          a.nav__list-link(href= item.url)= item.name
-  include ./user-menu
+  .nav__container.container
+    ul.nav__list.reset-list
+      each item in menuItems
+        li.nav__list-item
+          if item.page === isPage
+            a.nav__list-link.nav__list-link--active= item.name
+          else
+            a.nav__list-link(href= item.url)= item.name
+    include ./user-menu
 
 

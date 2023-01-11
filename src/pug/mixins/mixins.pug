@@ -3,3 +3,7 @@ mixin button(tag, text, href)
     a.button(href=href)&attributes(attributes)= text
   if tag === 'button'
     button.button&attributes(attributes)= text
+
+mixin svgIcon(name)
+  svg&attributes(attributes)
+    use(xlink:href=`./img/sprite.svg#${name}`)

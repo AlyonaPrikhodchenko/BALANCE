@@ -20,6 +20,7 @@
 
 .nav__list-link {
   text-decoration: none;
+  cursor: pointer;
 
   @include fontMontserratSBIt(13px, 17px, $color-dark);
 
@@ -28,6 +29,7 @@
 
   &--active {
     position: relative;
+    cursor: default;
 
     &::before {
       content: "";

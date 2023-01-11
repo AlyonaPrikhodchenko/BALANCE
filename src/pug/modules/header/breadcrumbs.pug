@@ -1,0 +1,8 @@
+.intro__menu-breadcrumbs.breadcrumbs
+  each item in menuItems
+    ul.breadcrumbs__list.reset-list
+      if item.page === isPage
+        li.breadcrums__item
+          a.breadcrumbs__link(href="./index.html") Главная
+        li.breadcrums__item
+          a.breadcrumbs__link.breadcrumbs__link--item= item.name

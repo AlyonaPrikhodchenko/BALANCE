@@ -1,5 +1,6 @@
-.header__intro.intro
-  if isPage === 'main-page'
-    include ./intro-slider
-  else
+if isPage === 'main-page'
+  .header__intro.intro.intro--main
+    include ./intro-main
+else
+  .header__intro.intro
     include ./intro-menu

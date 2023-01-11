@@ -1,5 +1,5 @@
 .nav {
-  padding: 29px 0;
+  padding: 14px 0;
   background-color: $color-light-bg;
 }
 
@@ -10,6 +10,7 @@
 
 .nav__list {
   display: flex;
+  align-self: center;
 }
 
 .nav__list-item {

@@ -1,0 +1,49 @@
+.nav-list {
+  display: flex;
+  align-self: center;
+}
+
+.nav-list__item {
+  &:not(:last-child) {
+    margin-right: 39px;
+  }
+}
+
+.nav-list__link {
+  text-decoration: none;
+  cursor: pointer;
+
+  @include fontMontserratSBIt(13px, 17px, $color-dark);
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &--footer {
+    color: #ffffff;
+  }
+
+  &--active {
+    position: relative;
+    cursor: default;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-dark;
+    }
+  }
+
+  &[href]:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+}

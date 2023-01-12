@@ -1,1 +1,16 @@
-footer.footer Футер
+footer.footer
+  .footer__container.container
+    .footer__wrapper.footer__wrapper--top
+      if isPage === 'main-page'
+        +svgIcon('logo')(class='footer__logo logo' width='200' height='25' stroke="#ffffff")
+      else
+        a.footer__logo-link(href="./index.html")
+          +svgIcon('logo')(class='footer__logo logo' width='200' height='25' stroke="#ffffff")
+      +navigation('nav-list--footer')(class='nav-list__link--footer')
+    .footer__wrapper.footer__wrapper--middle
+      address.footer__address ул. Оломоуцкая, 29, г. Волжский
+      include ./socials
+      a.footer__tel-link(href="tel:89610574977") +7 (961) 057-49-77
+    .footer__wrapper.footer__wrapper--bottom
+      p.footer__copyright © 2011–2021 «Balance»
+

@@ -7,3 +7,13 @@ mixin button(tag, text, href)
 mixin svgIcon(name)
   svg&attributes(attributes)
     use(xlink:href=`./img/sprite.svg#${name}`)
+
+mixin navigation(name)
+  - const classes = ['nav__list', 'nav-list', name, 'reset-list']
+    ul(class=classes)
+      each item in menuItems
+        li.nav-list__item
+        if item.page === isPage
+          a.nav-list__link.nav-list__link--active&attributes(attributes)= item.name
+        else
+          a.nav-list__link(href= item.url)&attributes(attributes)= item.name

@@ -17,3 +17,12 @@ mixin navigation(name)
           a.nav-list__link.nav-list__link--active&attributes(attributes)= item.name
         else
           a.nav-list__link(href= item.url)&attributes(attributes)= item.name
+
+
+mixin title(name, text)
+  - const classes = ['title', name]
+  h2(class=classes)= text
+
+mixin description(name, text)
+  - const classes = ['description', name]
+  p(class=classes)= text

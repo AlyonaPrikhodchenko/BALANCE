@@ -1,0 +1,7 @@
+.title {
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include fontPrata(36px, 47px, $color-accent-light);
+}

@@ -1,53 +1,35 @@
-@mixin fontMontserrat ($fs, $lh, $color) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: 400;
-  color: $color;
-}
-
-@mixin fontMontserratIt ($fs, $lh, $color) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: italic;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: 400;
-  color: $color;
-}
-
-@mixin fontMontserratSBIt ($fs, $lh, $color) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: italic;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: 600;
-  color: $color;
-}
-
-@mixin fontMonda ($fs, $lh, $color) {
-  font-family: "Monda", "Arial", sans-serif;
-  font-style: normal;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: 400;
-  color: $color;
-}
-
-@mixin fontRoboto ($fs, $lh, $color) {
+@mixin fontRoboto ($fw, $fs, $lh, $color) {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-size: $fs;
   line-height: $lh;
-  font-weight: 400;
+  font-weight: $fw;
   color: $color;
 }
 
-@mixin fontPrata ($fs, $lh, $color) {
-  font-family: "Prata", "Times New Roman", serif;
+@mixin fontAmatic ($fw, $fs, $lh, $color) {
+  font-family: "Amatic SC", "Arial", sans-serif;
   font-style: normal;
   font-size: $fs;
   line-height: $lh;
-  font-weight: 400;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin fontOpenSans ($fs, $lh, $color) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 400;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin fontElMessiri ($fs, $lh, $color) {
+  font-family: "El Messiri", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 400;
+  line-height: $lh;
+  font-weight: $fw;
   color: $color;
 }

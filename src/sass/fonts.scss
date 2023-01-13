@@ -1,48 +1,55 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Monda-Regular.woff2") format("woff2"), url("../fonts/Monda-Regular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Italic.woff") format("woff");
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Monda";
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Monda-Regular.woff2") format("woff2"), url("../fonts/Monda-Regular.woff") format("woff");
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Prata";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Prata-Regular.woff2") format("woff2"), url("../fonts/Prata-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ElMessiri-Regular.woff2") format("woff2"), url("../fonts/ElMessiri-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/AmaticSC-Regular.woff2") format("woff2"), url("../fonts/AmaticSC-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/AmaticSC-Bold.woff2") format("woff2"), url("../fonts/AmaticSC-Bold.woff") format("woff");
   font-display: swap;
 }

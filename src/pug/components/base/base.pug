@@ -11,8 +11,8 @@ html(lang='ru')
     link(rel="stylesheet", href="./css/style.min.css")
   body
     .body-wrapper
-      //- include ../modules/header/header
+      include ./header
       block content
-      //- include ../modules/footer/footer
+      include ./footer
     block scripts
       <script src="./js/script.js"></script>

@@ -1,3 +1,4 @@
+// Миксины для шрифтов
 @mixin fontRoboto ($fw, $fs, $lh, $color) {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
@@ -33,3 +34,24 @@
   font-weight: $fw;
   color: $color;
 }
+
+// Миксины медиазапросов mobile first
+
+@mixin vp-tablet {
+  @media (min-width: $vp-768) {
+    @content;
+  }
+}
+
+@mixin vp-desktopmin {
+  @media (min-width: $vp-1366) {
+    @content;
+  }
+}
+
+@mixin vp-desktopmax {
+  @media (min-width: $vp-1920) {
+    @content;
+  }
+}
+

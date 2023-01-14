@@ -1,4 +1,17 @@
 .container {
-  width: 1296px;
+  width: 87.5%;
   margin: 0 auto;
+
+  @include vp-tablet {
+    width: 89.58%;
+  }
+
+  @include vp-desktopmin {
+    width: 78%;
+  }
+
+  @include vp-desktopmax {
+    width: 78.12%;
+    max-width: 1500px;
+  }
 }

@@ -1,1 +1,11 @@
-header.header.container Header
+header.header
+  .header__container.container
+    +logo('header__logo')(width="37", height="80")
+    nav.nav
+      +menu('nav__menu')
+    .user-menu
+      button.user-menu__button
+        +svgIcon('burger-icon')(width="32", height="32", fill="#688800")
+      button.user-menu__button
+        +svgIcon('basket')(width="32", height="32", fill="#688800")
+        span.user-menu__counter 1

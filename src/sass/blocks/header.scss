@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  flex-shrink: 0;
+  width: 128px;
+  height: 128px;
+  margin-top: -16px;
+  margin-left: -5px;
+  background-color: $color-logo-bg;
+  border-radius: 50%;
+}

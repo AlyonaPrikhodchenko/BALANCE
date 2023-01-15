@@ -1,6 +1,31 @@
 block variables
+  -
+    const siteTitle =  `R.olio`;
+    const linksItems = [
+      {
+        name: 'Масло',
+        link: '#oil'
+      },
+      {
+        name: 'О нас',
+        link: '#about'
+      },
+      {
+        name: 'Отзывы',
+        link: '#reviews'
+      },
+      {
+        name: 'Оплата и доставка',
+        link: '#delivery'
+      },
+      {
+        name: 'Контакты',
+        link: '#contacts'
+      }
+    ]
 
 block mixins
+  include ../mixins/mixins
 
 doctype html
 html(lang='ru')

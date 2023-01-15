@@ -1,0 +1,7 @@
+.menu__link {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+
+  @include fontRoboto(300, 18px, 21px, $color-white);
+}

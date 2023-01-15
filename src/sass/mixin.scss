@@ -20,18 +20,18 @@
 @mixin fontOpenSans ($fs, $lh, $color) {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
-  font-size: 400;
+  font-size: $fs;
   line-height: $lh;
-  font-weight: $fw;
+  font-weight: 400;
   color: $color;
 }
 
 @mixin fontElMessiri ($fs, $lh, $color) {
   font-family: "El Messiri", "Arial", sans-serif;
   font-style: normal;
-  font-size: 400;
+  font-size: $fs;
   line-height: $lh;
-  font-weight: $fw;
+  font-weight: 400;
   color: $color;
 }
 

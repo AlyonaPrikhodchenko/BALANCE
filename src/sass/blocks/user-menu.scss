@@ -1,0 +1,29 @@
+.user-menu {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+}
+
+.user-menu__button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.user-menu__counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background-color: $color-counter;
+  border-radius: 50%;
+
+  @include fontRoboto(400, 12px, 14px, $color-white);
+}

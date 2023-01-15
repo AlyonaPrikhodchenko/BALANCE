@@ -1,0 +1,21 @@
+.footer {
+  padding: 32px 0;
+  background-color: $color-accent-dark;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  justify-items: center;
+  background-color: $color-accent-dark;
+}
+
+.footer__logo {
+  width: 104px;
+  height: 104px;
+}
+
+.footer__menu {
+  text-align: center;
+}

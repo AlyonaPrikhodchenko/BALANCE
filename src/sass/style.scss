@@ -1,5 +1,13 @@
 @import "./variables";
 @import "./fonts";
 @import "./mixin";
-@import "./global/global.scss";
+@import "./global/global";
 @import "./container";
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/menu";
+@import "./blocks/user-menu";
+@import "./blocks/footer";
+@import "./blocks/socials";
+

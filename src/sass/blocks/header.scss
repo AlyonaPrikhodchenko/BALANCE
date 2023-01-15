@@ -9,25 +9,21 @@
 }
 
 .header__logo {
-  flex-shrink: 0;
-  width: 128px;
-  height: 128px;
   margin-top: -16px;
   margin-left: -5px;
-  background-color: $color-logo-bg;
-  border-radius: 50%;
 
   @include vp-tablet {
-    width: 180px;
-    height: 180px;
     margin-top: -32px;
     margin-left: -23px;
   }
-}
 
-.header__logo img {
-  @include vp-tablet {
-    width: 44px;
-    height: 96px;
+  @include vp-desktopmin {
+    margin-top: -29px;
+    margin-left: -40px;
+  }
+
+  @include vp-desktopmax {
+    margin-top: -42px;
+    margin-left: -48px;
   }
 }

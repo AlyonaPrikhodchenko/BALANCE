@@ -9,4 +9,11 @@
   &--js {
     display: block;
   }
+
+  @include vp-desktopmin {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
 }

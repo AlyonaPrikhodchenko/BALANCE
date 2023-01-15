@@ -13,14 +13,10 @@
   gap: 32px;
   justify-items: center;
   background-color: $color-accent-dark;
-}
 
-.footer__logo {
-  width: 104px;
-  height: 104px;
-}
-
-.footer__logo img {
-  width: 41px;
-  height: 86px;
+  @include vp-desktopmin {
+    grid-template-columns: repeat(3, auto);
+    column-gap: 96px;
+    align-items: center;
+  }
 }

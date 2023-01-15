@@ -20,6 +20,23 @@
   @include vp-tablet {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 688px;
+  }
+
+  @include vp-desktopmin {
+    &--header {
+      display: flex;
+      width: 742px;
+      margin: 0 auto;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &--header a {
+      padding: 0;
+
+      @include fontElMessiri(18px, 28px, $color-accent-middle);
+    }
   }
 }
 
@@ -31,6 +48,7 @@
   @include vp-tablet {
     &:not(:last-child) {
       margin-bottom: 0;
+      margin-right: 40px;
     }
   }
 }

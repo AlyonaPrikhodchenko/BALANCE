@@ -23,6 +23,12 @@
     width: 40px;
     height: 40px;
   }
+
+  @include vp-desktopmin {
+    &--burger {
+      display: none;
+    }
+  }
 }
 
 .user-menu__icon {

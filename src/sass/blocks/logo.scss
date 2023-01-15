@@ -2,4 +2,64 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &--header {
+    flex-shrink: 0;
+    width: 128px;
+    height: 128px;
+    background-color: $color-logo-bg;
+    border-radius: 50%;
+
+    @include vp-tablet {
+      width: 180px;
+      height: 180px;
+    }
+
+    @include vp-desktopmin {
+      width: 212px;
+      height: 212px;
+    }
+
+    @include vp-desktopmax {
+      width: 316px;
+      height: 316px;
+    }
+  }
+
+  &--footer {
+    width: 104px;
+    height: 104px;
+
+    @include vp-desktopmin {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+.logo--header img {
+  @include vp-tablet {
+    width: 44px;
+    height: 96px;
+  }
+
+  @include vp-desktopmin {
+    width: 50px;
+    height: 109px;
+  }
+
+  @include vp-desktopmax {
+    width: 76px;
+    height: 155px;
+  }
+}
+
+.logo--footer img {
+  width: 41px;
+  height: 86px;
+
+  @include vp-desktopmin {
+    width: 56px;
+    height: 116px;
+  }
 }

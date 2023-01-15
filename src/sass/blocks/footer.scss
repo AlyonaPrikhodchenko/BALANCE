@@ -1,6 +1,10 @@
 .footer {
   padding: 32px 0;
   background-color: $color-accent-dark;
+
+  @include vp-tablet {
+    padding: 40px 0;
+  }
 }
 
 .footer__container {
@@ -16,6 +20,7 @@
   height: 104px;
 }
 
-.footer__menu {
-  text-align: center;
+.footer__logo img {
+  width: 41px;
+  height: 86px;
 }

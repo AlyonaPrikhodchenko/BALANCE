@@ -1,6 +1,44 @@
+.menu {
+  width: 100%;
+
+  &--header {
+    background-color: $color-accent-dark;
+    box-shadow: 0 0 5px 1px $color-logo-bg;
+    border-radius: 5px;
+
+    & a {
+      padding: 10px 15px;
+    }
+  }
+
+  &--footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include vp-tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include vp-tablet {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .menu__link {
   display: block;
-  padding: 10px 15px;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
 
   @include fontRoboto(300, 18px, 21px, $color-white);

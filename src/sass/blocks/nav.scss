@@ -4,14 +4,9 @@
   right: 5px;
   display: none;
   width: 80%;
+  max-width: 400px;
 
   &--js {
     display: block;
   }
-}
-
-.nav__menu {
-  background-color: $color-accent-dark;
-  box-shadow: 0 0 5px 0 $color-accent-dark;
-  border-radius: 5px;
 }

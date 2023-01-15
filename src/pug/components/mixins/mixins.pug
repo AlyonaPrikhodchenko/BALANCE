@@ -4,7 +4,7 @@ mixin logo(name)
       img.logo__img(src="./img/content/logo.svg", alt="Логотип R.olio.")&attributes(attributes)
 
 mixin menu(name)
-  - const classes = [name, 'menu']
+  - const classes = ['menu', name]
     ul(class=classes)
       each item in linksItems
         li.menu__item

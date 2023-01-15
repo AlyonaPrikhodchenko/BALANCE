@@ -2,15 +2,43 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 24px;
+
+  @include vp-tablet {
+    gap: 32px;
+  }
 }
 
 .user-menu__button {
   position: relative;
-  width: 40px;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 32px;
+  height: 32px;
   padding: 0;
   background-color: transparent;
   border: none;
+
+  @include vp-tablet {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.user-menu__icon {
+  flex-shrink: 0;
+
+  @include vp-tablet {
+    &--burger {
+      width: 30px;
+      height: 23px;
+    }
+
+    &--basket {
+      width: 40px;
+      height: 37px;
+    }
+  }
 }
 
 .user-menu__counter {
@@ -26,4 +54,13 @@
   border-radius: 50%;
 
   @include fontRoboto(400, 12px, 14px, $color-white);
+
+  @include vp-tablet {
+    top: -11px;
+    right: -14px;
+    width: 24px;
+    height: 24px;
+
+    @include fontRoboto(400, 16px, 19px, $color-white);
+  }
 }

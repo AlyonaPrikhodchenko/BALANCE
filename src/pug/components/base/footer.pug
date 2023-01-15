@@ -2,7 +2,4 @@ footer.footer
   .footer__container.container
     +logo('logo--footer')(width="41", height="86")
     +menu('menu--footer')
-    .socials
-      +svgIcon('instagram')(width="24", height="24", fill="#ffffff")
-      +svgIcon('telegram')(width="24", height="24", fill="#ffffff")
-      +svgIcon('viber')(width="24", height="24", fill="#ffffff")
+    include ./base-components/socials

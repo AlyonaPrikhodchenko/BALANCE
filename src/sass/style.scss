@@ -1,13 +1,22 @@
+// Переменные, шрифты, миксины
 @import "./variables";
 @import "./fonts";
 @import "./mixin";
+// Свайпер
+@import "./vendor/swiper";
+// Глобальные стили и компоненты
 @import "./global/global";
+@import "./components/title";
+@import "./components/button";
 @import "./container";
+// Блоки
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/nav";
 @import "./blocks/menu";
 @import "./blocks/user-menu";
+@import "./blocks/main";
+@import "./blocks/products";
 @import "./blocks/footer";
 @import "./blocks/socials";
 

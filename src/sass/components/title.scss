@@ -1,0 +1,5 @@
+.title {
+  margin: 0;
+
+  @include fontAmatic(400, 36px, 40px, $color-accent-middle);
+}
